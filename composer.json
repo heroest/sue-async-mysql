@@ -1,0 +1,36 @@
+{
+    "name": "sue/async-mysql",
+    "description": "提供基于illuminate/database的组件的mysql异步驱动",
+    "type": "library",
+    "require": {
+        "php": ">=5.6.0",
+        "ext-mysqli": "*",
+        "sue/event-loop": "^1.1",
+        "sue/coroutine": ">=1.2.1",
+        "psr/log": "^1.1",
+        "illuminate/database": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "orchestra/testbench": "^6.28",
+        "nunomaduro/collision": "^5.11"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sue\\Async\\Mysql\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sue\\Async\\Mysql\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "heroest",
+            "email": "kakashi@live.cn"
+        }
+    ],
+    "minimum-stability": "stable"
+}
